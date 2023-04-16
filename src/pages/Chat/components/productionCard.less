@@ -1,0 +1,47 @@
+.CardWrapper {
+  width: 306px;
+  cursor: pointer;
+  &:hover .CardContent {
+    background-color: #0a7a73;
+    &:hover .content {
+      color: white;
+    }
+    &:hover .button {
+      color: #0a7a73;
+      background-color: white;
+      border: solid 1px white;
+    }
+  }
+  .title {
+    padding: 5px;
+    color: #333333;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+  }
+  .CardContent {
+    padding: 16px 24px;
+    background-color: #f8f9fb;
+    border-radius: 5px;
+    transition: all 0.25s;
+    .content {
+      height: 204px;
+      padding: 12px 8px;
+      color: #666666;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 28px;
+    }
+    .button {
+      width: 180px;
+      margin: 0 auto;
+      padding: 6px 24px;
+      color: #0a7a73;
+      font-size: 16px;
+      text-align: center;
+      border: solid 1px #0a7a73;
+      border-radius: 5px;
+    }
+  }
+}

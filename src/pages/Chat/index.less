@@ -1,0 +1,116 @@
+@import (reference) '~antd/es/style/themes/index';
+
+.chatContent {
+  background: white !important;
+}
+.siderWrapper {
+  background: white;
+  .sider {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 240px;
+    min-height: 100vh;
+    padding: 30px 20px;
+    background-color: #001529;
+    .siderChatContent {
+      height: 70%;
+      min-height: 400px;
+      :global(.ant-btn-primary) {
+        background: #009b95;
+        border: solid 1px #009b95;
+        border-radius: 2px;
+      }
+    }
+  }
+}
+.header {
+  margin-top: 68px;
+  color: #333;
+  font-size: 32px;
+  line-height: 45px;
+  text-align: center;
+  .subTitle {
+    color: #999999;
+    font-weight: 400;
+  }
+}
+
+.chatSiderChatTabsCard {
+  display: flex;
+  margin-top: 40px;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.15s;
+  .chatSiderChatTabsCardIcons {
+    width: 18px;
+    height: 18px;
+    margin-right: 12px;
+  }
+  .checkedChatSiderChatTabsCardIcons {
+    svg {
+      color: #009b95 !important;
+    }
+  }
+  .checkedChatSiderChatTabsCardText {
+    color: #009b95 !important;
+  }
+  .chatSiderChatTabsCardText {
+    flex: 1;
+    width: 108px;
+    height: 26px;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 18px;
+    font-family: PingFangSC-Regular, PingFang SC;
+  }
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  padding: 16px;
+  background-color: white;
+  box-shadow: 0 2px 8px #f0f1f2;
+  .chatWrapper {
+    padding: 0 16px 0 50px;
+    :global {
+      .ant-input:focus,
+      .ant-input:hover,
+      .ant-input-focused {
+        border-color: #009b95;
+      }
+      .ant-input:focus,
+      .ant-input-focused {
+        box-shadow: 0 0 0 2px #009b95;
+      }
+    }
+  }
+  .outputButtonWrapper {
+    width: 120px;
+    :global(.ant-btn-primary) {
+      background: #009b95;
+      border: solid 1px #009b95;
+    }
+  }
+}
+
+.mobileHeader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  height: 44px;
+  color: white;
+  font-size: 15px;
+  background-color: #009b95;
+}
+.mobileContent {
+  padding-top: 68px;
+}

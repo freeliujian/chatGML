@@ -1,0 +1,77 @@
+@import (reference) '~antd/es/style/themes/index';
+
+.newSession {
+  margin-top: 40px;
+  width: 1000px;
+  .question {
+    display: flex;
+    align-items: center;
+    img {
+      width: 26px;
+      height: 26px;
+    }
+    span {
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 26px;
+      color: #333333;
+      height: 28px;
+      margin-left: 16px;
+    }
+  }
+
+  .chat {
+    display: flex;
+    div {
+      position: relative;
+      .copyAnswer {
+        position: absolute;
+        bottom: 0;
+        right: 16px;
+        z-index: 2;
+        cursor: pointer;
+        img {
+          width: 24px;
+          height: 24px;
+        }
+        span {
+          color: #009B95;
+          line-height: 20px;
+          height: 24px;
+          font-size: 14px;
+        }
+      }
+
+      .answer {
+        width: 900px;
+        margin-left: 28px;
+        background: #F0F3F6;
+        border-radius: 4px;
+        font-size: 18px;
+        color: rgba(0,0,0,0.85);
+        line-height: 32px;
+        min-height: 268px;
+        p {
+          padding: 16px;
+        }
+      }
+    }
+    button {
+      width: 90px;
+      height: 48px;
+      background: #FFFFFF;
+      border-radius: 6px;
+      border: 1px solid #009B95;
+      margin-left: 10px;
+      span {
+        width: 40px;
+        height: 28px;
+        font-size: 20px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #009B95;
+        line-height: 28px;
+      }
+    }
+  }
+}
